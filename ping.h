@@ -14,8 +14,10 @@
 #include <ifaddrs.h>
 #include <arpa/inet.h>
 #include <sys/time.h>
+#include <pthread.h>
+#include <assert.h>
 
-#define BUFSIZE 1500
+#define BUFSIZE 1024
 
 char sendbuf[BUFSIZE];
 
